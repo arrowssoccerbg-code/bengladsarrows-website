@@ -1,130 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benglads Arrows Soccer Academy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benglads Arrows Soccer Academy</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0a1f44;
-      color: white;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-    header {
-      background: #061733;
-      padding: 20px;
-      text-align: center;
-    }
+/* NAVBAR */
+nav {
+    background: #0b2c5f;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
 
-    header p {
-      margin: 5px 0 0;
-      color: #cbd5e1;
-    }
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #0b2c5f, #1e90c9);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
 
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                  url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a');
-      background-size: cover;
-      background-position: center;
-    }
+.hero img {
+    width: 150px;
+}
 
-    .hero h2 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+/* SECTIONS */
+.section {
+    padding: 60px 30px;
+    text-align: center;
+}
 
-    .hero p {
-      font-size: 18px;
-    }
+.section h2 {
+    color: #0b2c5f;
+}
 
-    .section {
-      padding: 40px 20px;
-      text-align: center;
-    }
+/* PROGRAMS */
+.programs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-    .section h2 {
-      margin-bottom: 20px;
-      color: #38bdf8;
-    }
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
 
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+/* FORM */
+form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
 
-    .card {
-      background: #122a5c;
-      padding: 20px;
-      width: 250px;
-      border-radius: 10px;
-    }
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
 
-    footer {
-      background: #061733;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #cbd5e1;
-    }
-  </style>
+button {
+    background: #1e90c9;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* CONTACT */
+.contact {
+    background: #0b2c5f;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #021631;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
 </head>
 
 <body>
 
-<header>
-  <h1>Benglads Arrows Soccer Academy</h1>
-  <p>Where Talent Meets Discipline</p>
-</header>
+<!-- NAVBAR -->
+<nav>
+    <div><strong>BASA</strong></div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
+<!-- HERO -->
 <section class="hero">
-  <h2>Developing Future Football Stars</h2>
-  <p>Building discipline, skill and excellence in young players</p>
+    <img src="logo.png" alt="BASA Logo">
+    <h2>Benglads Arrows Soccer Academy</h2>
+    <p><strong>Where Talent Meets Discipline</strong></p>
 </section>
 
-<section class="section">
-  <h2>Our Teams</h2>
-  <div class="cards">
-    <div class="card">U8 Team</div>
-    <div class="card">U10 Team</div>
-    <div class="card">U13 Team</div>
-    <div class="card">Elite Development Squad</div>
-  </div>
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Benglads Arrows Soccer Academy (BASA) develops disciplined, skilled, and educated footballers in Ghana.</p>
+
+    <h3>Vision</h3>
+    <p>To become a leading grassroots football academy in the Central Region and across Ghana.</p>
+
+    <h3>Mission</h3>
+    <p>To identify, train, and mentor young football talents through professional coaching, discipline, and exposure.</p>
 </section>
 
-<section class="section">
-  <h2>Training Schedule</h2>
-  <p>Monday - Friday: 4:00pm - 6:00pm</p>
-  <p>Weekends: Matches & Competitions</p>
+<!-- PROGRAMS -->
+<section id="programs" class="section">
+    <h2>Our Programs</h2>
+
+    <div class="programs">
+        <div class="card">
+            <h3>U8</h3>
+            <p>Basic introduction to football and fun learning.</p>
+        </div>
+
+        <div class="card">
+            <h3>U10</h3>
+            <p>Fundamental football skills and discipline.</p>
+        </div>
+
+        <div class="card">
+            <h3>U13</h3>
+            <p>Advanced technical and tactical training.</p>
+        </div>
+    </div>
+
+    <p><strong>Training:</strong> Mon–Fri 4–6PM | Weekends: Matches</p>
 </section>
 
-<section class="section">
-  <h2>Contact Us</h2>
-  <p>Awutu Beraku, Central Region, Ghana</p>
-  <p>Email: info@bengladsarrows.com</p>
+<!-- REGISTRATION FORM -->
+<section id="register" class="section">
+    <h2>Player Registration</h2>
+
+    <form name="registration" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="registration">
+
+        <label>Player Name</label>
+        <input type="text" name="player_name" required>
+
+        <label>Age</label>
+        <input type="number" name="age" required>
+
+        <label>Parent/Guardian Name</label>
+        <input type="text" name="parent_name" required>
+
+        <label>Phone Number</label>
+        <input type="text" name="phone" required>
+
+        <label>Email</label>
+        <input type="email" name="email">
+
+        <label>Select Program</label>
+        <select name="program">
+            <option>U8</option>
+            <option>U10</option>
+            <option>U13</option>
+        </select>
+
+        <label>Additional Notes</label>
+        <textarea name="message"></textarea>
+
+        <button type="submit">Register Player</button>
+    </form>
 </section>
 
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Email: info@bengladsarrows.com</p>
+    <p>Phone: +233246760764 / +233594483058</p>
+    <p>Location: Awutu Beraku, Ghana</p>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  © 2021 Benglads Arrows Soccer Academy
+    <p>© 2026 Benglads Arrows Soccer Academy</p>
 </footer>
 
-  <section class="section">
-    <h2>vision</h2>
-    <p>To become a leading grassroot football academy in Ghana and West Africa that develops disciplined, skilled, and educated players, while creating sustainable local and international opportunities for them to succeed in professional football and in life</p>
-
- <section class="section">
-   <h2>Mission</h2>
-   <p>To identify, train, and mentor young football talents through professional coaching, strong discipline, academic support, and to actively create pathways for our players through local competitions, professional partnerships, scholarships, and international exposure. We are committed to nurturing responsible, confident, and competitive athletes who positively impact their communities. </p>
 </body>
 </html>
