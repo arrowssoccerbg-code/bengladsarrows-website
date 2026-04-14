@@ -25,15 +25,23 @@ nav a {
     margin-left: 20px;
     text-decoration: none;
 }
+    nav img {
+        width: 160px;
+        height: auto;
+        flex-shrink:0;
+ }
 
 /* HERO */
 .hero {
-    background: url('hero.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+  background: linear-gradient(
+    135deg,
+    #0b1f3a 0%,   /* Deep navy */
+    #123a6b 50%,  /* Mid navy */
+    #ffffff 100%  /* White */
+  );
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .hero img {
